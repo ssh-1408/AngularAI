@@ -1,0 +1,77 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('/images/AIhero.jpg') no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 13, 13, 0.4); /* dark overlay for readability */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+  margin-left: 30px;
+  color: var(--primary-color);
+}
+
+.hero-content h1 {
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: var(--button-color);
+}
+
+.hero-content p {
+  font-weight: 300;
+  margin-bottom: 44px;
+}
+
+img {
+  width: 250px;
+  height: 250px;             /* Set a consistent height */
+  object-fit: cover;         /* Crop & fill the area */
+  border-radius: 10px;       /* Optional: rounded corners */
+  display: block;
+}
+
+.carousel-wrapper {
+  padding-bottom: 2rem;
+}
+
+::ng-deep .splide__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;     
+  position: static;   
+}
+
+::ng-deep .splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: #888;     
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+::ng-deep .splide__pagination__page.is-active {
+  background-color: var(--accent); 
+}

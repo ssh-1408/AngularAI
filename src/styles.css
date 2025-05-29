@@ -1,1 +1,134 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #0d0d0d;
+    --accent: #00fcdb;
+    --text-color: #a8acb7;
+    --button-color: #3500fc;
+  }
+
+body{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    font-weight: 400;
+    background: #0d0d0d;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  h2{
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -2px;
+  }
+  h3{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+  }
+  h4{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+  }
+  h5{
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -1px;
+  }
+  h6{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -1px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .padding-top{
+    padding-top: 100px;
+  }
+  .padding-bottom{
+    padding-bottom: 100px;
+  }
+
+  .padding-bottom-medium{
+    padding-bottom: 44px;
+  }
+
+  .title-width{
+    max-width: 800px;
+    margin: 0 auto;           
+    text-align: center;   
+  }
+  .section-subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  .generic-title{
+    text-align: center;
+   }
+
+  .ai-btn a ,.ai-btn button{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 41px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    background: var(--button-color);
+    transition: .4s ease-in-out;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+  span.error {
+    padding-top: 4px;
+    display: block;
+    color: red;
+  }
+  .ai-btn button{
+    border: none;
+    cursor: pointer;
+  }
+  .ai-btn a:hover,
+  .ai-btn button:hover{
+    color: var(--button-color);
+    transform: translateY(-5px);
+    background: var(--primary-color);
+  }
+  
+  a:hover, button:hover input {
+    outline: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
