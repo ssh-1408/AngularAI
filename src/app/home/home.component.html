@@ -17,21 +17,79 @@
 
 <!-- Services Section -->
 <section class="service-slider-sec w-100 float-left padding-top padding-bottom">
-  <div class="generic-title">
-    <span class="section-subtitle">WHAT WE DO</span>
-    <h3 class="title-width padding-bottom-medium">
-      Discover the power of AI tools designed with intelligence, elegance, and innovation
-    </h3>
-  </div>
+    <div class="wrapper">
+        <div class="generic-title">
+            <span class="section-subtitle">WHAT WE DO</span>
+            <h3 class="title-width padding-bottom-medium">
+                Discover the power of AI tools designed with intelligence, elegance, and innovation
+            </h3>
+        </div>
 
-  <div class="service-slider-box">
-  <div class="carousel-wrapper">
-  <splide [options]="carouselOptions">
-    <splide-slide *ngFor="let img of images">
-      <img [src]="img" alt="slide" />
-    </splide-slide>
-  </splide>
-</div>
-</div>
+        <div class="service-slider-box">
+            <div class="carousel-wrapper">
+                <splide [options]="carouselOptions">
+                    <splide-slide *ngFor="let img of images">
+                        <img [src]="img" alt="slide" />
+                    </splide-slide>
+                </splide>
+            </div>
+        </div>
+    </div>
 </section>
+<!-- Services Section -->
+
+<!-- collection section -->
+<section class="collection-section w-100 float-left padding-bottom">
+    <div class="wrapper">
+        <div class="generic-title">
+            <span class="section-subtitle">HUGE COLLECTION</span>
+            <h3 class="title-width padding-bottom-medium">AI-Powered Design</h3>
+        </div>
+        <div class="collection-inner-sec">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="collection-box">
+                        <figure>
+                            <img src="images/collection/collection-img1.png" alt="collection-img1">
+                        </figure>
+                        <h4>Intelligent</h4>
+                        <p>Smart algorithms that adapt, learn, and generate with precision to enhance your creative workflows.</p>
+                        <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6" >
+                    <div class="collection-box">
+                        <figure>
+                            <img src="images/collection/collection-img2.png" alt="collection-img2">
+                        </figure>
+                        <h4>Visualization</h4>
+                        <p>Transform ideas into vivid, high-quality visuals using advanced AI rendering and image synthesis.</p>
+                        <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="collection-box">
+                        <figure>
+                            <img src="images/collection/collection-img3.png" alt="collection-img3">
+                        </figure>
+                        <h4>Creativity</h4>
+                        <p>Push the boundaries of imagination with tools designed to unlock unique and artistic possibilities.</p>
+                        <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="collection-box">
+                        <figure>
+                            <img src="images/collection/collection-img4.png" alt="collection-img4">
+                        </figure>
+                        <h4>Flexible</h4>
+                        <p>Fully customizable outputs that adapt to your style, needs, and evolving ideas with ease and flexibility.</p>
+                        <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- collection section -->
 

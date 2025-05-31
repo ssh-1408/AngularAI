@@ -16,7 +16,7 @@ export class HomeComponent {
     perPage: 5,
     autoplay: true,
     interval: 3000,
-    gap: '1rem',
+    gap: '5rem',
     pagination: true,      
     arrows: true          
   };
