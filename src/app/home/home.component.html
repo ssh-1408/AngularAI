@@ -1,5 +1,4 @@
-<section class="hero-section w-100 float-left">
-  <div class="wrapper">
+<section class="hero-section">
     <div class="hero-content">
       <h1>
         The <span>Future</span> in AI Graphic Generator
@@ -12,12 +11,10 @@
         <a routerLink="/about">Get Started</a>
       </div>
     </div>
-  </div>
 </section>
 
-<!-- Services Section -->
+<!-- Carousel Section -->
 <section class="service-slider-sec w-100 float-left padding-top padding-bottom">
-    <div class="wrapper">
         <div class="generic-title">
             <span class="section-subtitle">WHAT WE DO</span>
             <h3 class="title-width padding-bottom-medium">
@@ -26,7 +23,7 @@
         </div>
 
         <div class="service-slider-box">
-            <div class="carousel-wrapper">
+            <div>
                 <splide [options]="carouselOptions">
                     <splide-slide *ngFor="let img of images">
                         <img [src]="img" alt="slide" />
@@ -34,20 +31,18 @@
                 </splide>
             </div>
         </div>
-    </div>
 </section>
-<!-- Services Section -->
+<!-- Carousel Section -->
 
-<!-- collection section -->
-<section class="collection-section w-100 float-left padding-bottom">
-    <div class="wrapper">
+<!-- Collection section -->
+<section class="collection-section padding-bottom">
         <div class="generic-title">
             <span class="section-subtitle">HUGE COLLECTION</span>
             <h3 class="title-width padding-bottom-medium">AI-Powered Design</h3>
         </div>
-        <div class="collection-inner-sec">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="mb-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="collection-box">
                         <figure>
                             <img src="images/collection/collection-img1.png" alt="collection-img1">
@@ -57,7 +52,7 @@
                         <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6" >
+                <div class="mb-3 col-lg-3 col-md-6 col-sm-6" >
                     <div class="collection-box">
                         <figure>
                             <img src="images/collection/collection-img2.png" alt="collection-img2">
@@ -67,7 +62,7 @@
                         <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="mb-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="collection-box">
                         <figure>
                             <img src="images/collection/collection-img3.png" alt="collection-img3">
@@ -77,7 +72,7 @@
                         <a routerLink="/service"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="mb-3 col-lg-3 col-md-6 col-sm-6">
                     <div class="collection-box">
                         <figure>
                             <img src="images/collection/collection-img4.png" alt="collection-img4">
@@ -89,7 +84,178 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
-<!-- collection section -->
+<!-- Collection section -->
+
+<!-- about section -->
+    <section class="about-sec padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 padding-bottom-medium">
+                    <figure class="mb-0">
+                        <img src="images/about.jpg" alt="about-img">
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-details-box">
+                        <div class="generic-title">
+                            <span class="section-subtitle">ABOUT US</span>
+                            <h3 class="title-width padding-bottom-medium">Architecting the Digital
+                                Future</h3>
+                        </div>        
+                        <p >We specialize in cutting-edge AI image creation, blending technology and creativity to bring digital visions to life. From photorealistic renderings to imaginative visual concepts, our tools empower designers, brands, and storytellers to explore new visual frontiers with speed and precision.</p>
+                        <div class="ai-btn">
+                            <a routerLink="/about">About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- about section-->
+
+<!-- plans section-->
+    <section class="plans-section padding-bottom">
+        <div class="container">
+            <div class="generic-title">
+                <span class="section-subtitle">AFFORDABLE PLANS</span>
+                <h3 class="title-width padding-bottom-medium">Pricing Plans</h3>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-6 col-md-6">
+                    <div class="plan-box text-center">
+                        <h3>Business Plan</h3>
+                        <p class="plan-txt">Perfect for private individuals</p>
+                        <p>Starting at:</p>
+                        <div class="price">
+                            <p>$ 8 /mo</p>
+                        </div>
+                        <div class="w-100">
+                            <ul class="pricing-list">
+                                <li><i class="fas fa-check"></i> 100 Projects</li>
+                                <li><i class="fas fa-check"></i> Download prototypes</li>
+                                <li><i class="fas fa-check"></i> Graphic Images</li>
+                            </ul>
+                        </div>
+                        <div class="ai-btn">
+                            <a routerLink="/service">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-lg-6 col-md-6">
+                    <div class="plan-box text-center">
+                        <h3>Premium Plan</h3>
+                        <p class="plan-txt">Perfect for private companies</p>
+                        <p>Starting at:</p>
+                        <div class="price">
+                            <p>$ 19 /mo</p>
+                        </div>
+                        <div class="w-100">
+                            <ul class="pricing-list">
+                                <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                <li><i class="fas fa-check"></i> Download prototypes</li>
+                                <li><i class="fas fa-check"></i> Graphic Images</li>
+                            </ul>
+                        </div>
+                        <div class="ai-btn">
+                            <a routerLink="/service">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- blogs section-->
+    <section class="blogs-section padding-bottom">
+        <div class="container">
+            <div class="generic-title">
+                <span class="section-subtitle">LATEST POSTS</span>
+                <h3 class="title-width padding-bottom-medium">News & Articles</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="blog-inner-box">
+                        <figure class="mb-0">
+                            <img src="images/blogs/blog1.jpg" alt="blog-img1">
+                        </figure>
+                        <div class="blog-text-con">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block">
+                                    <figure class="mb-0">
+                                        <img src="images/blogs/profile.jpg" alt="blog-profile-img">
+                                    </figure>
+                                </li>
+                                <li class="d-inline-block"><span>Lena Carter</span></li>
+                            </ul>
+                            <a href="single-blog.html">
+                                <h4>The Top Benefits of AI for Marketers, State of AI Data</h4>
+                            </a>
+                            <div class="posted-details">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-inline-block"><i class="fas fa-calendar-alt"></i> June 3, 2025</li>
+                                    <li class="d-inline-block mr-0"><i class="fas fa-comments"></i> 0 Comments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-duration="600">
+                    <div class="blog-inner-box">
+                        <figure class="mb-0">
+                            <img src="images/blogs/blog2.jpg" alt="blog-img2">
+                        </figure>
+                        <div class="blog-text-con">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block">
+                                    <figure class="mb-0">
+                                        <img src="images/blogs/profile.jpg" alt="blog-profile-img">
+                                    </figure>
+                                </li>
+                                <li class="d-inline-block"><span>Eli Navarro</span></li>
+                            </ul>
+                            <a href="single-blog.html">
+                                <h4>AI Tools to Help You Grow Your AI Graphics Business</h4>
+                            </a>
+                            <div class="posted-details">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-inline-block"><i class="fas fa-calendar-alt"></i> June 4, 2025</li>
+                                    <li class="d-inline-block mr-0"><i class="fas fa-comments"></i> 0 Comments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-duration="600">
+                    <div class="blog-inner-box">
+                        <figure class="mb-0">
+                            <img src="images/blogs/blog3.jpg" alt="blog-img3">
+                        </figure>
+                        <div class="blog-text-con">
+                            <ul class="list-unstyled">
+                                <li class="d-inline-block">
+                                    <figure class="mb-0">
+                                        <img src="images/blogs/profile.jpg" alt="blog-profile-img">
+                                    </figure>
+                                </li>
+                                <li class="d-inline-block"><span>Maya Chen</span></li>
+                            </ul>
+                            <a href="single-blog.html">
+                                <h4>When Is the Best Time to Post on Instagram in 2025?</h4>
+                            </a>
+                            <div class="posted-details">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-inline-block"><i class="fas fa-calendar-alt"></i> June 6, 2025</li>
+                                    <li class="d-inline-block mr-0"><i class="fas fa-comments"></i> 0 Comments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blogs section-->
+
 

@@ -46,25 +46,22 @@ h1{
     letter-spacing: -1px;
   }
   h4{
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 600;
     color: var(--primary-color);
-    letter-spacing: -1px;
   }
   h5{
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: -1px;
+    font-size: 1.375rem;
+    line-height: 1.8rem;
   }
   h6{
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: -1px;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
   }
   p{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.6rem;
   }
   .padding-top{
     padding-top: 100px;
@@ -108,15 +105,7 @@ h1{
     text-align: center;
     transition: all 0.5s ease-in-out;
   }
-  span.error {
-    padding-top: 4px;
-    display: block;
-    color: red;
-  }
-  .ai-btn button{
-    border: none;
-    cursor: pointer;
-  }
+  
   .ai-btn a:hover,
   .ai-btn button:hover{
     color: var(--button-color);
@@ -124,11 +113,142 @@ h1{
     background: var(--primary-color);
   }
   
-  a:hover, button:hover input {
-    outline: none;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  @media (max-width: 992px) {
+  .hero-section {
+    padding: 0 2rem;
+    height: auto;
+    min-height: 80vh;
   }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+
+  .ai-btn a {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  h6 {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .ai-btn a {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,140 @@
+/* Footer Base */
+.footer-inner-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #111;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.footer-box {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.footer-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent, #00fcdb);
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: #fff;
+}
+
+/* Text & Links */
+.footer-box h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.footer-box ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-box ul li a:hover {
+  color: var(--accent, #00fcdb);
+}
+
+/* Social Icons */
+.footer-logo ul {
+  margin-top: 12px;
+}
+
+.footer-logo ul li {
+  margin-right: 10px;
+}
+
+.footer-logo ul li a {
+  color: #ccc;
+  font-size: 1rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-logo ul li a:hover {
+  color: var(--accent, #00fcdb);
+}
+
+/* Address section */
+.address-box i {
+  margin-right: 8px;
+  color: var(--accent, #00fcdb);
+}
+
+/* Newsletter Form */
+.footer-form-box input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 280px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.footer-form-box button {
+  background-color: var(--accent, #00fcdb);
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer-form-box button:hover {
+  background-color: #00d1b8;
+}
+
+/* Checkbox + Policy */
+.footer-form-box form {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-form-box input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.footer-form-box a {
+  color: var(--accent, #00fcdb);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-form-box button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
