@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgxSplideModule } from 'ngx-splide';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,12 @@ import { NgxSplideModule } from 'ngx-splide';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+  
   carouselOptions = {
     type: 'loop',
     perPage: 5,
@@ -52,15 +58,5 @@ export class HomeComponent {
     'images/carousel/image10.jpg'
   ];
 
-  showPlayButton = true;
-
-  playVideo(video: HTMLVideoElement): void {
-    video.play()
-      .then(() => {
-        this.showPlayButton = false;
-      })
-      .catch(error => {
-        console.error('Playback failed:', error);
-      });
-  }
+  
 }
