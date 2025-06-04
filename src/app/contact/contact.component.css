@@ -1,0 +1,147 @@
+/* Contact Page Top Section */
+
+
+.contact-left-sec{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.section-subtitle-left{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title-width-left{    
+    text-align: left;   
+  }
+
+
+.contact-right-sec {
+  position: relative;
+  text-align: center;
+}
+
+.contact-right-sec figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.contact-review-box {
+  position: absolute;
+  bottom: 5px;
+  right: 400px;
+  background: radial-gradient(circle, #000 0%, var(--accent, #00fcdb) 100%);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-review-box span {
+  display: block;
+}
+.counting-box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent, #00fcdb);
+}
+
+.contact-review-box .counting-box,
+.contact-review-box p {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+ /* Form Section */
+ .contact-section {
+  padding: 80px 0;
+}
+
+.contact-details ul li {
+  margin-bottom: 15px;
+}
+
+.contact-details ul li i {
+  margin-right: 10px;
+  color: var(--accent, #00fcdb);
+}
+
+.contact-details ul li a {
+  text-decoration: none;
+}
+
+.contact-form-box {
+  padding: 30px;
+}
+
+.contact-form-box h3 {
+  margin-bottom: 25px;
+}
+
+.contact-form-box ul li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-form-box i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: var(--accent, #00fcdb);
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1c1c1c;
+  color: #fff;
+  outline: none;
+}
+
+.contact-form-box textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.generic-btn button {
+  padding: 12px 28px;
+  background-color: var(--accent, #00fcdb);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generic-btn button:hover {
+  background-color: #00d1b8;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .contact-left-sec {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .contact-review-box {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .contact-form-box {
+    padding: 20px;
+  }
+}
