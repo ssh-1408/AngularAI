@@ -1,49 +1,38 @@
-/* video section */
-.video-sec {
-  max-width: 800px;
+.image-generator {
+  max-width: 600px;
   margin: 0 auto;
-  position: relative;
+  text-align: center;
 }
 
-.box-video {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.bg-video {
-  position: relative;
+.image-generator input {
   width: 100%;
-  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.bg-video video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.bt-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+.image-generator button {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 41px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  background: var(--button-color);
+  border: none;
   cursor: pointer;
-  z-index: 10;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
-.bt-play::before {
-  content: '';
-  position: absolute;
-  left: 26px;
-  top: 18px;
-  width: 0;
-  height: 0;
-  border-left: 22px solid white;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
+.image-generator button:hover {
+  color: var(--button-color);
+  background: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.image-generator img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
 }
