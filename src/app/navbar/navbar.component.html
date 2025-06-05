@@ -1,32 +1,47 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/home"><span>Ai</span>Creator</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><span class="toggler-line"></span></span>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      (click)="toggleNavbar()"
+      [class.open]="isNavbarOpen"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="custom-toggler-icon">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home">Home</a>
+          <a class="nav-link" routerLink="/home" (click)="collapseNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
+          <a class="nav-link" routerLink="/about" (click)="collapseNavbar()">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/blog">Blog</a>
+          <a class="nav-link" routerLink="/blog" (click)="collapseNavbar()">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/service">Service</a>
+          <a class="nav-link" routerLink="/service" (click)="collapseNavbar()">Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+          <a class="nav-link" routerLink="/contact" (click)="collapseNavbar()">Contact</a>
         </li>
       </ul>
-      <button class="btn btn-login">
-        <i class="fas fa-lock me-1"></i> Login
+      <div class="login-container">
+      <button class="btn btn-login" routerLink="/service" (click)="collapseNavbar()">
+          <i class="fas fa-lock me-1"></i> Login
       </button>
+      </div>
     </div>
   </div>
 </nav>

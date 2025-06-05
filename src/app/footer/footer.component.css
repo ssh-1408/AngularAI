@@ -3,15 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
-  padding: 60px 20px;
+  gap: 20px;
+  padding: 20px 20px;
   background-color: #111;
   color: #ccc;
   font-size: 0.95rem;
 }
 
 .footer-box {
-  flex: 1 1 220px;
+  flex: 1 1 100px;
   min-width: 200px;
 }
 

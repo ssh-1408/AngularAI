@@ -7,8 +7,7 @@
   border: none;
   box-shadow: none;
   z-index: 10;
-  padding: 1rem 2rem;
-  margin-top: 20px;
+  padding: 1.5rem 2rem;
 }
 
 /* Navbar container layout */
@@ -37,12 +36,6 @@
   color: var(--accent);
 }
 
-/* Nav links center-aligned */
-.navbar-collapse {
-  flex-grow: 1;
-  justify-content: center;
-}
-
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -59,6 +52,12 @@
 
 .nav-link:hover {
   color: var(--accent);
+}
+
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Login button on the right */
@@ -78,46 +77,54 @@
   border-color: var(--accent);
 }
 
-/* Custom navbar toggle button color */
 .navbar-toggler {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-/* Reset Bootstrap icon */
-.navbar-toggler-icon {
-  background-image: none;
+  border: none;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   position: relative;
-  width: 24px;
-  height: 18px;
-  display: inline-block;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Shared style for all bars */
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after,
-.navbar-toggler-icon .toggler-line {
-  content: '';
-  display: block;
+/* Remove Bootstrap’s default background */
+.navbar-toggler-icon {
+  background-image: none !important;
+}
+
+.custom-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 15px;
+  position: relative;
+}
+
+/* Hamburger lines */
+.toggler-line {
   height: 2px;
   width: 100%;
-  background-color: var(--primary-color);
-  border-radius: 1px;
-  position: absolute;
-  left: 0;
+  background-color: black;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Top bar */
-.navbar-toggler-icon::before {
-  top: 0;
+/* Cross transformation when open */
+.navbar-toggler.open .toggler-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.navbar-toggler.open .toggler-line:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler.open .toggler-line:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* Middle bar */
-.navbar-toggler-icon .toggler-line {
-  top: 8px;
-}
-
-/* Bottom bar */
-.navbar-toggler-icon::after {
-  bottom: 0;
+@media (max-width: 991.98px) {
+  .navbar {
+    background-color: #000000 !important;
+  }
 }
