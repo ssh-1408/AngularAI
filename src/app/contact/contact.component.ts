@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,6 +8,10 @@ import { RouterLink } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit{
+
+  ngOnInit(): void {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
 }

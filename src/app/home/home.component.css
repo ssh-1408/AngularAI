@@ -2,23 +2,10 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('/images/AIhero.png') no-repeat center center / cover;
+  background: url('/images/AIhero.jpg') no-repeat center center / cover;
   display: flex;
   align-items: center;
   padding: 0 4rem;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 13, 13, 0.1);
-  z-index: 1;
 }
 
 .hero-content {
@@ -26,11 +13,6 @@
   z-index: 2;
   max-width: 640px;
   color: var(--primary-color);
-}
-
-.hero-content h1 {
-  margin-bottom: 30px;
-  line-height: 1.2;
 }
 
 .hero-content h1 span {
@@ -109,7 +91,7 @@ img {
   transition: background 0.3s ease, transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  /* Align top */
+  justify-content: flex-start;  
   height: 100%;
   overflow: hidden; 
 }
@@ -121,11 +103,11 @@ img {
 
 .collection-box img {
   max-width: 50px;
-  width: 100%;             /* Ensures responsiveness within max-width */
-  height: auto;            /* Maintains aspect ratio */
-  object-fit: contain;     /* Prevents distortion */
+  width: 100%;             
+  height: auto;            
+  object-fit: contain;     
   display: block;
-  margin: 0 auto;          /* Centers the image */
+  margin: 0 auto;          
 }
 
 .collection-box h4 {
@@ -136,7 +118,7 @@ img {
 .collection-box p {
   color: var(--text-color);
   margin: 1.0rem 0 1.0rem;
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
 }
 
@@ -152,10 +134,6 @@ img {
 
 /* about section */
 
-.about-sec .container,
-.about-sec .row {
-    height: 100%;
-}
 
 .about-sec .col-lg-6 {
     height: 100%;
@@ -174,15 +152,11 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease-in-out;
-}
-.about-sec figure:hover img {
-  transform: scale(1.1);
 }
 
 .about-details-box p {
     max-width: 500px;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 2rem;
 }
 .about-details-box{
@@ -247,6 +221,12 @@ img {
 .blog-inner-box figure {
   margin: 0;
   width: 100%;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.blog-inner-box:hover figure {
+  transform: scale(1.1);
 }
 
 .blog-inner-box figure img {
@@ -314,10 +294,27 @@ img {
   color: var(--accent, #00fcdb);
 }
 
-/* Optional: Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 0 2rem;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
 @media (max-width: 767px) {
-  .blog-text-con h4 {
-    font-size: 1rem;
+
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+  }
+
+  .hero-content {
+    margin-top: 5rem;
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .posted-details li {

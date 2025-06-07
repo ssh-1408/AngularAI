@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px 20px;
-  background-color: #111;
+  padding: 10px 10px;
+  background-color:  var(--secondary-color);
   color: #ccc;
   font-size: 0.95rem;
 }
@@ -80,31 +80,31 @@
 }
 
 /* Newsletter Form */
-.footer-form-box input[type="text"] {
+.footer-form-box ul li {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-form-box input[type="text"],
+.footer-form-box button {
+  flex: 1;
   padding: 10px;
-  width: 100%;
-  max-width: 280px;
   border: none;
   border-radius: 4px;
-  margin-bottom: 10px;
   outline: none;
 }
 
+/* Optional: Keep button styling */
 .footer-form-box button {
   background-color: var(--accent, #00fcdb);
-  border: none;
-  padding: 10px 20px;
   color: #000;
   font-weight: bold;
-  border-radius: 4px;
   cursor: pointer;
-  margin-left: 10px;
 }
 
 .footer-form-box button:hover {
   background-color: #00d1b8;
 }
-
 /* Checkbox + Policy */
 .footer-form-box form {
   margin-top: 10px;
@@ -130,11 +130,5 @@
   .footer-box {
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  .footer-form-box button {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 100%;
   }
 }

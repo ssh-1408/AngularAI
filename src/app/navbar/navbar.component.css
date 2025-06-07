@@ -54,29 +54,6 @@
   color: var(--accent);
 }
 
-.login-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Login button on the right */
-.btn-login {
-  padding: 10px 24px;
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-login:hover {
-  background-color: var(--accent);
-  color: #000;
-  border-color: var(--accent);
-}
-
 .navbar-toggler {
   border: none;
   background-color: var(--accent);
@@ -125,6 +102,12 @@
 
 @media (max-width: 991.98px) {
   .navbar {
-    background-color: #000000 !important;
+    background-color: var(--secondary-color) !important;
+    padding: 1.0rem 1.0rem;
   }
+  .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 }
